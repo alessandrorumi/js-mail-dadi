@@ -2,19 +2,19 @@
 
 // Generare un numero random da 1 a 6 (giocatore)
 const userRandomNumber = Math.floor(Math.random() * 6 + 1);
-console.log(userRandomNumber);
+document.getElementById('userOutput').innerHTML = `Il tuo numero è ${userRandomNumber}`;
 
 // Generare un numero random da 1 a 6 (pc)
 const computerRandomNumber = Math.floor(Math.random() * 6 + 1);
-console.log(computerRandomNumber);
+document.getElementById('computerOutput').innerHTML = `Il numero del computer è ${computerRandomNumber}`;
 
 // Confronto tra i due numeri random
 if (userRandomNumber > computerRandomNumber) {
-  console.log('Hai Vinto');
+  document.getElementById('result').innerHTML = 'Hai Vinto!';
 
 } else if (userRandomNumber < computerRandomNumber) {
-  console.log('Hai Perso');
+  document.getElementById('result').innerHTML = 'Hai Perso!';
 
 } else {
-  console.log('Pareggio');
+  document.getElementById('result').innerHTML = 'Pareggio';
 }
