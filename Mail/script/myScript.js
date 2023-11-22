@@ -59,9 +59,9 @@ verify.addEventListener('click',
       }
     
       if (foundedMail === true) {
-        console.log('YES')
+        document.getElementById('textOutput').innerHTML = 'La tua Mail è corretta, puoi accedere!';
       } else {
-        console.log('NO')
+        document.getElementById('textOutput').innerHTML = 'La tua Mail è sbagliata, non puoi accedere!';
       }
     
     }    
